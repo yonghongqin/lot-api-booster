@@ -1,0 +1,24 @@
+{
+  "database": {
+    "connectionString": "mongodb://localhost:27017/taskdb-dev"
+  },
+  "server": {
+    "port": 5000,
+    "jwtSecret": "random-secret-password",
+    "jwtExpiration": "1h",
+    "routePrefix": "",
+    "plugins": ["logger", "jwt-auth", "swagger"]
+  },
+
+  "gocery": {
+    "port": 443,
+    "baseUrl": "https://staging-api.gocery.ca/api/1.0"
+  },
+
+  "database-rds": {
+    "connectionString": {
+      "pg": "postgres://gocery:password8889@localhost:5432/gocery"
+    }
+  }
+
+}

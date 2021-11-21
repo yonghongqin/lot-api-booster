@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": 5000,
+        "routePrefix": "/lot-api-booster/1.0"
+      },
+    "redis": {
+      "host": "r-bp1x73og8xt7ko54prpd.redis.rds.aliyuncs.com",
+      "port": 6379,
+      "username": "r-bp1x73og8xt7ko54pr",
+      "password": "wK7#xxGV9wEt6cg"
+    },
+    "sequelize": {
+        "username": "testuser228",
+        "password": "228TestUser@",
+        "database": "legendoftown",
+        "host": "rm-2zef8u146c116y4bgno.mysql.rds.aliyuncs.com",
+        "dialect": "mysql",
+        "port": "3306",
+        "pool": {
+          "max": 5,
+          "min": 0,
+          "idle": 10000
+        }
+      }
+}
