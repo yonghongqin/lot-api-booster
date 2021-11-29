@@ -11,8 +11,7 @@ export const retrieveCache = (
 ) => {
   return new Promise((resolve: any, reject: any) => {
     try {
-      models[REDIS_CLIENT]?.get(
-        cacheName,
+      models[REDIS_CLIENT]?.get(cacheName,
         async (err: any, data: any) => {
           err && console.warn("Retrieving cache ClientMenu has error. Will retrieve data from DB instead", err);
           //data 是空数组[]字符长度为2
