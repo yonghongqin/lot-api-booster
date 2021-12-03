@@ -4,7 +4,6 @@ import { IRequest } from "../../interfaces/request";
 import StatusEnum from "../../constants/StatusEnum";
 import {getCityIdFromHeader} from '../../utils/routeHandler';
 import { retrieveCache } from "../service/cacheService";
-import AuditStatusEnum from "../../constants/AuditStatusEnum";
 
 const cacheName = 'AdsPrice'
 export const  getAdsPrice = async (request: IRequest, h: Hapi.ResponseToolkit) => {
